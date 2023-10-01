@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta itemprop="name" content="测试name" />
+        <meta itemprop="image" content="http://cloudtown.eu.org/api/i/v1/" />
+        <meta name="description" itemprop="description" content="测试description" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+        <title>请在浏览器中打开</title>
+        <style>
+            body{background-color:#333;}img{width:100%;}
+        </style>
+    </head>
+    <body id="tips">
+        <script>
+            var url=document.location.toString();var urlParmStr=url.slice(url.indexOf("=")+1);var ua=navigator.userAgent.toLowerCase();var isQQ=ua.indexOf("qq")!=-1;var isWeixin=ua.indexOf("micromessenger")!=-1;var isAndroid=ua.indexOf("android")!=-1;var isIos=(ua.indexOf("iphone")!=-1)||(ua.indexOf("ipad")!=-1);var notice_openBrowser="<img src='https://Clancy6.github.io/images/open_in_browser_andriod.png' />";if(isWeixin||isQQ){if(isAndroid){document.getElementById("tips").innerHTML=notice_openBrowser}else{if(isIos){document.getElementById("tips").innerHTML=notice_openBrowser}else{document.getElementById("tips").innerHTML=notice_openBrowser}}}else{if(urlParmStr==url){urlParmStr="https://cloudtown.top"}console.log(urlParmStr);location.href=urlParmStr};
+        </script>
+    </body>
+</html>
