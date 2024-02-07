@@ -15,6 +15,7 @@ start_server() {
   if [ ! -f "$MC_SERVER_DIR/$SERVER_JAR" ]; then
     echo "Downloading $SERVER_JAR..."
     wget https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar -O "$MC_SERVER_DIR/$SERVER_JAR"
+    yum install screen
   fi
 
   # 安装Java运行环境
